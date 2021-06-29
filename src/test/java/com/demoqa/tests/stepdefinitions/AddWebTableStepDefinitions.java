@@ -40,6 +40,7 @@ public class AddWebTableStepDefinitions {
     @Then("^he should see the web table created$")
     public void heShouldSeeTheWebTableCreated() {
         theActorInTheSpotlight().attemptsTo(FillAllFieldsValidations.validations());
+        System.out.println("Hello world");
     }
 
 }
