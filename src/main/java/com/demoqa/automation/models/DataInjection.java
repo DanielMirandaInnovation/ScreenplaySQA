@@ -8,7 +8,9 @@ public class DataInjection {
 
     Faker faker = new Faker(new Locale("en-US"));
 
-    private String fullName, email, currentAddress, permanentAddress, extensionName;
+    private String fullName, email, currentAddress, permanentAddress, extensionName,
+            filepath, loginCredentialsNameSheet, validationSheet;
+
 
 
     public DataInjection(){
@@ -18,6 +20,21 @@ public class DataInjection {
         this.currentAddress = faker.address().streetAddress();
         this.permanentAddress = faker.address().fullAddress();
         this.extensionName = "Name:";
+        this.filepath = "resources/dataExcel.xlsx";
+        this.loginCredentialsNameSheet = "loginCredentials";
+        this.validationSheet = "validations";
+    }
+
+    public String getValidationSheet() {
+        return validationSheet;
+    }
+
+    public String getFilepath() {
+        return filepath;
+    }
+
+    public String getLoginCredentialsNameSheet() {
+        return loginCredentialsNameSheet;
     }
 
     public String getExtensionName() {

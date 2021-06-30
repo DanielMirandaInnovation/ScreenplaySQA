@@ -26,8 +26,6 @@ public class FillAllFields implements Task {
                 Enter.theValue(dataInjection.getPermanentAddress()).into(TextBoxPage.PERMANENT_ADDRESS_INPUT),
                 JavaScriptClick.on(TextBoxPage.SUBMIT_BUTTON)
         );
-
-
     }
 
     public static FillAllFields successful (){

@@ -2,3 +2,5 @@ com/demoqa/tests/runners/AddWebTableRunner.java
  com.demoqa.tests.runners.AddWebTableRunner
 com/demoqa/tests/stepdefinitions/AddWebTableStepDefinitions.java
  com.demoqa.tests.stepdefinitions.AddWebTableStepDefinitions
+com/demoqa/tests/stepdefinitions/PracticeLoginStepDefinitions.java
+ com.demoqa.tests.stepdefinitions.PracticeLoginStepDefinitions

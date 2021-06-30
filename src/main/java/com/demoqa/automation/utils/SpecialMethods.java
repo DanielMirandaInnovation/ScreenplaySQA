@@ -5,9 +5,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class SpecialMethods {
-    public static void waitFor(int millis){
+    public static void waitFor(int seconds){
         try {
-            Thread.sleep(millis);
+            Thread.sleep(seconds*1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -13,11 +13,11 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 public class FillAllFieldsValidations implements Task {
 
     DataInjection dataInjection = new DataInjection();
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.should(seeThat(PresenceElements.visible(TextBoxPage.EMAIL_VALIDATION)),
                 seeThat(Validations.in(TextBoxPage.NAME_VALIDATION),equalToIgnoringCase(dataInjection.getExtensionName()+dataInjection.getFullName())));
-
     }
 
     public static FillAllFieldsValidations validations (){

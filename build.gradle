@@ -31,6 +31,10 @@ dependencies {
     compile 'com.google.guava:guava:23.0'
     implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.80'
+    implementation group: 'org.apache.poi', name: 'poi', version: '5.0.0'
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.0.0'
+
+
 
 }
 test.finalizedBy(aggregate)
